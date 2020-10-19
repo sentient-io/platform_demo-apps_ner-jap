@@ -1,6 +1,6 @@
-# platform_demo-apps_ner-Jap
+# platform_demo-apps_ner-jap
 
-- git clone https://github.com/sentient-io/platform_demo-apps_ner-Jap
+- git clone https://github.com/sentient-io/platform_demo-apps_ner-jap
 
 - open app.js file and feed your api key
 
