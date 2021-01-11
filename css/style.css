@@ -23,9 +23,9 @@
      .CF-support{
         background-image: url(../img/demo-app-bg-waveline.png);
         background-repeat: no-repeat;
-        margin: 0 auto;
+        margin: 0!important;
         background-size: contain;
-        min-height: calc(100vh - 104px);
+        /* min-height: calc(100vh - 104px); */
         background-position: bottom;
         display: flex;
         flex-direction: column;
@@ -39,9 +39,9 @@
      
      section {
          max-width: 1000px;
-         margin: 2rem auto 0;
-         display: flex;
-         display: -ms-flexbox;
+         margin: 0 auto 0;
+         display: flex !important;
+         display: -ms-flexbox !important;
          padding: 0rem 1rem;
      }
      
@@ -66,11 +66,12 @@
          justify-content: space-between;
          -ms-flex-pack: justify;
          padding: 2rem 1rem;
+         padding-top: 3rem;
      }
      
      .footer-logo{
-         display: flex;
-         display: -ms-flexbox;
+         /* display: flex; */
+         /* display: -ms-flexbox; */
          align-items: center;
          margin-left: 1rem;
      }
@@ -92,7 +93,7 @@
          }
      
          .footer-logo{
-           padding-top: 2rem;
+           /* padding-top: 2rem; */
            justify-content: center;
            -ms-flex-pack: justify;
          }
@@ -155,7 +156,7 @@ textarea:focus{
   body {
     color: #424143;
     font-family:'avenir';
-    background-color: #f6f6f6;
+    background-color: #f6f6f6 !important;
     letter-spacing: 1px!important;
 }
 h4.title-sent{
@@ -279,6 +280,9 @@ button {
 .pb-2{
     padding-bottom: 2rem;
 }
+.pb-4{
+    padding-bottom: 4rem;
+}
 .p-LR-1{
     padding: 0 1rem;
 }
@@ -371,9 +375,9 @@ border-top: 4px solid #bdbdbd;
   @media screen and (max-width: 991px) {
     .footer-section{
         flex-direction: column;
-        flex-flow: column-reverse;
+        flex-flow: column;
         text-align: center;
-        display: flex;
+        display: flex;      
     }
     .footer-logo {
         display: flex;
@@ -381,8 +385,9 @@ border-top: 4px solid #bdbdbd;
         align-items: center;       
         text-align: center;
         display: block;
-        margin: 2rem auto;
-        padding-bottom: 2rem;
+        /* margin: 2rem auto; */
+        margin: 0 auto;
+        padding-bottom: 1rem;
     }
 
   }
@@ -455,11 +460,11 @@ max-width:1170px
   }
 }
 
-@@media (min-width: 768px) {
+/* @@media (min-width: 768px) {
 .footer-section{
     max-width: 750px;
   }
-}
+} */
 .spinner {
 	width: 4rem;
 	height: 4rem;
@@ -710,3 +715,11 @@ max-width:1170px
 	}
 }
 
+.flex-fill{
+    flex: 1 1 auto;
+}
+.content{	
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
